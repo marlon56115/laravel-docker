@@ -3,22 +3,21 @@
 
 Docker setup to run a laravel app
 
-##  Features ##
+##  Containers ##
 
-:heavy_check_mark: Laravel app;\
-:heavy_check_mark: Database;\
-:heavy_check_mark: PhpMyAdmin;
+:heavy_check_mark: Laravel app\
+:heavy_check_mark: Database\
+:heavy_check_mark: PhpMyAdmin
 
 ## Requirements ##
 
 - Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Docker](https://docs.docker.com/engine/install/) installed.
 - Laravel project to run
 ## :checkered_flag: configurations ##
-Add the followings env variables to your .env file
+Add or Edit the followings variables to your .env file
 
 `DB_CONNECTION=mysql` <br>
 `DB_HOST=app-service-mysql`<br>
-`DB_PORT`<br>
 `DB_PORT=3306`<br>
 `DB_DATABASE=app-service`<br>
 `DB_USERNAME=yourname`<br>
@@ -42,7 +41,9 @@ $ docker network create app-network
 # Run the app
 $ docker-compose up --build
 
-# The server will initialize in the <http://localhost:3000>
+# The server will initialize in the <http://localhost:9000>
+# The phpmyadmin will initialize in the <http://localhost:9001>
+
 ```
 
 ## :memo: License ##
