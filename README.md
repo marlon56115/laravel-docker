@@ -1,7 +1,7 @@
 
 ## About ##
 
-Docker setup to run a laravel app
+Docker setup to run a laravel app. Image build with php:8.1-apache-bullseye, you can change in the docker/Dockerfile the php version if you need another version.
 
 ##  Containers ##
 
