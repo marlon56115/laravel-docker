@@ -32,8 +32,8 @@ Add or Edit the followings variables to your .env file
 # Clone this project
 $ git clone https://github.com/marlon56115/docker-laravel
 
-# Copy tue files inside your project
-$ cp docker-laravel/* your_project_directory
+# Copy the files inside your project
+$ mkdir  {{your_project_directory}}/docker && cp docker/*  {{your_project_directory}}/docker && cp docker-compose.yml  {{your_project_directory}}
 
 # Create the docker network
 $ docker network create app-network
